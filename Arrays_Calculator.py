@@ -16,7 +16,7 @@ def array2x2_add():
     arr2[1,0] , arr2[1,1] = array2_entry21.get() , array2_entry22.get()
     #Operation && Print
     arr3 = numpy.add(arr1,arr2)
-    messagebox.showinfo("Result" , f"{arr3[0,0] , arr3[0,1]}\n{arr3[1,0] , arr3[1,1]}")
+    messagebox.showinfo("Result" , f"{float(arr3[0,0]) , float(arr3[0,1])}\n{float(arr3[1,0]) , float(arr3[1,1])}")
 
 def array2x2_subtract():
     #Array1 Sort
@@ -27,7 +27,7 @@ def array2x2_subtract():
     arr2[1,0] , arr2[1,1] = array2_entry21.get() , array2_entry22.get()
     #Operation && Print
     arr3 = numpy.subtract(arr1,arr2)
-    messagebox.showinfo("Result" , f"{arr3[0,0] , arr3[0,1]}\n{arr3[1,0] , arr3[1,1]}")
+    messagebox.showinfo("Result" , f"{float(arr3[0,0]) , float(arr3[0,1])}\n{float(arr3[1,0]) , float(arr3[1,1])}")
 
 def array2x2_multiply():
     #Array1 Sort
@@ -42,7 +42,7 @@ def array2x2_multiply():
     arr3[0,1] = (arr1[0,0]*arr2[0,1])+(arr1[0,1]*arr2[1,1])
     arr3[1,0] = (arr1[1,0]*arr2[0,0])+(arr1[1,1]*arr2[1,0])
     arr3[1,1] = (arr1[1,0]*arr2[0,1])+(arr1[1,1]*arr2[1,1])
-    messagebox.showinfo("Result" , f"{arr3[0,0] , arr3[0,1]}\n{arr3[1,0] , arr3[1,1]}")
+    messagebox.showinfo("Result" , f"{float(arr3[0,0]) , float(arr3[0,1])}\n{float(arr3[1,0]) , float(arr3[1,1])}")
 
 def array2x2_inverse():
     #Array1 Sort
@@ -60,7 +60,7 @@ def array2x2_inverse():
     arr3[0,1] = (1/((arr1[0,0]*arr1[1,1])-(arr1[1,0]*arr1[0,1])))*(0-arr1[0,1])
     arr3[1,0] = (1/((arr1[0,0]*arr1[1,1])-(arr1[1,0]*arr1[0,1])))*(0-arr1[1,0])
     arr3[1,1] = (1/((arr1[0,0]*arr1[1,1])-(arr1[1,0]*arr1[0,1])))*(arr1[0,0])
-    messagebox.showinfo("Result" , f"{arr3[0,0] , arr3[0,1]}\n{arr3[1,0] , arr3[1,1]}")
+    messagebox.showinfo("Result" , f"{float(arr3[0,0]) , float(arr3[0,1])}\n{float(arr3[1,0]) , float(arr3[1,1])}")
 
 def operation():
     if operation_entry.get() == "+":
